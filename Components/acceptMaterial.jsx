@@ -1,8 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const acceptMaterial = () => {
-  return <div>acceptMaterial</div>;
-  
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default acceptMaterial;
+export default acceptMaterial

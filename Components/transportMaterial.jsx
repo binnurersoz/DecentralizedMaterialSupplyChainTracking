@@ -1,8 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const transportMaterial = () => {
-  return <div>transportMaterial</div>;
-  
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default transportMaterial;
+export default transportMaterial

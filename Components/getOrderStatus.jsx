@@ -1,8 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const getOrderStatus = () => {
-  return <div>getOrderStatus</div>;
-  
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default getOrderStatus;
+export default getOrderStatus

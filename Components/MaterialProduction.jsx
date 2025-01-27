@@ -1,8 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const MaterialProduction = () => {
-  return <div>MaterialProduction</div>;
-  
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default MaterialProduction;
+export default MaterialProduction

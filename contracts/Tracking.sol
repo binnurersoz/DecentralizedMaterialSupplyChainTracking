@@ -22,7 +22,7 @@ contract Tracking{
 
 
     //Creation of the order
-    function issuePurchaseOrder(string memory _materialType, uint _quantity) public {
+    function IssuePurchaseOrder(string memory _materialType, uint _quantity) public {
         uint orderId = nextOrderId++;  // ID is created for new order and increased
         orders[orderId] = MaterialOrder(orderId, _materialType, _quantity, "Ordered", 0,0,0,0); 
     }
@@ -40,7 +40,7 @@ contract Tracking{
 
 
     // Update the status when transporting the material
-    function transportMaterial(uint _orderId) public {
+    function TransportMaterial(uint _orderId) public {
         require(bytes(orders[_orderId].status).length != 0, "Order not found");
         //Check whether the status of the order is "Produced"
         require(keccak256(bytes(orders[_orderId].status)) == keccak256(bytes("Produced")), "Order not produced yet");
@@ -50,7 +50,7 @@ contract Tracking{
 
 
     // Update the status when material is delivered 
-    function deliverMaterial(uint _orderId) public {
+    function DeliverMaterial(uint _orderId) public {
         require(bytes(orders[_orderId].status).length != 0, "Order not found");
         require(keccak256(bytes(orders[_orderId].status)) == keccak256(bytes("Shipped")), "Order not shipped yet");
 
@@ -59,7 +59,7 @@ contract Tracking{
     }
 
     // Update the status when material is accepted
-    function acceptMaterial(uint _orderId) public {
+    function AcceptMaterial(uint _orderId) public {
         require(bytes(orders[_orderId].status).length != 0, "Order not found");
         require(keccak256(bytes(orders[_orderId].status)) == keccak256(bytes("Delivered")), "Order not delivered yet");
 

@@ -37,7 +37,7 @@ export const TrackingProvider = ({ children }) => {
   };
 
   // Update material production
-  const materialProduction = async (orderId) => {
+  const MaterialProduction = async (orderId) => {
     try {
       const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
@@ -54,7 +54,7 @@ export const TrackingProvider = ({ children }) => {
   };
 
   // Transport material
-  const transportMaterial = async (orderId) => {
+  const TransportMaterial = async (orderId) => {
     try {
       const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
@@ -71,7 +71,7 @@ export const TrackingProvider = ({ children }) => {
   };
 
   // Deliver material
-  const deliverMaterial = async (orderId) => {
+  const DeliverMaterial = async (orderId) => {
     try {
       const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
@@ -88,7 +88,7 @@ export const TrackingProvider = ({ children }) => {
   };
 
   // Accept material
-  const acceptMaterial = async (orderId) => {
+  const AcceptMaterial = async (orderId) => {
     try {
       const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
@@ -165,10 +165,10 @@ export const TrackingProvider = ({ children }) => {
         currentUser,
         connectWallet,
         issuePurchaseOrder,
-        materialProduction,
-        transportMaterial,
-        deliverMaterial,
-        acceptMaterial,
+        MaterialProduction,
+        TransportMaterial,
+        DeliverMaterial,
+        AcceptMaterial,
         getOrderStatus,
       }}
     >

@@ -1,20 +1,16 @@
-import acceptMaterial from "./acceptMaterial";
+import AcceptMaterial from "./AcceptMaterial";
 import ConnectWallet from "./ConnectWallet";
-import Dashbord from "./Dashbord";
-import deliverMaterial from "./deliverMaterial";
+import DeliverMaterial from "./DeliverMaterial";
 import Footer from "./Footer";
 import Form from "./Form";
 import getOrderStatus from "./getOrderStatus";
-import Header from "./Header";
-import issuePurchaseOrder from "./issuePurchaseOrder";
-import Loader from "./Loader";
+import IssuePurchaseOrder from "./IssuePurchaseOrder";
 import MaterialProduction from "./MaterialProduction";
 import NavBar from "./NavBar";
-import OrderDetails from "./OrderDetails";
 import Profile from "./Profile";
-import TransactionHistory from "./TransactionHistory";
-import transportMaterial from "./transportMaterial";
-
+import TransportMaterial from "./TransportMaterial";
+import Services from "./Services";
+import Table from "./Table";
 //SVG
 
 import Nav1 from "./SVG/Nav1";
@@ -26,22 +22,19 @@ import Str1 from "./SVG/Str1";
 
 
 export{
-    acceptMaterial,
+    AcceptMaterial,
     ConnectWallet,
-    Dashbord,
-    deliverMaterial,
+    DeliverMaterial,
     Footer,
     Form,
     getOrderStatus,
-    Header,
-    issuePurchaseOrder,
-    Loader,
+    IssuePurchaseOrder,
     MaterialProduction,
     NavBar,
-    OrderDetails,
     Profile,
-    TransactionHistory,
-    transportMaterial,
+    TransportMaterial,
+    Services,
+    Table,
 
     //SVG
     Nav1,
